@@ -16,7 +16,7 @@
     {%endblock alert%}
     {%block content%}
     <h2>
-    <form id="fixedmenu" autocomplete="off" method="post" action="insertfixed" >
+    <form id="fixedmenu"autocomplete="off" method="post" action="insertnonfixed" enctype="multipart/form-data" >
         {% csrf_token %}
         <label for="billingdate">Billing Date &nbsp;&nbsp;: </label>
         &ensp;<input type="date" id="billdate" name="billdate1"><br><br>
